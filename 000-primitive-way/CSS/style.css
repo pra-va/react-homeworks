@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+} 
+
+.colors {
+    background-color: salmon;
+    color: snow;
+}
+
+.border {
+    border: 5px solid red;
+}

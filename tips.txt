@@ -1,0 +1,95 @@
+#OPEN GOOGLE CHROME WITHOUT WEB SECURITY
+google-chrome --disable-web-security --user-data-dir="/tmp"
+
+
+#YOUTUBE VIDEO TIP TO ENABLE LINT AND PRETTIER CORRECTLY FOR VS CODE
+https://www.youtube.com/watch?v=bfyI9yl3qfE
+
+
+#CREATE .eslintrc IN MAIN PROJECT DIRECTORY WITH
+{
+  "extends": ["react-app", "plugin:prettier/recommended"]
+}
+
+
+#MY VS CODE SETTINGS FILE
+{
+    "eslint.enable": true,
+    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.formatOnSave": false
+    },
+    "eslint.autoFixOnSave": true,
+    "eslint.alwaysShowStatus": true,
+    "prettier.disableLanguages": [
+        "js"
+    ],
+    "files.autoSave": "onFocusChange",
+    "window.zoomLevel": 2,
+    "workbench.colorTheme": "Default Light+",
+    "explorer.confirmDragAndDrop": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "javascript.updateImportsOnFileMove.enabled": "always"
+}
+
+
+#package.json CONTENTS
+{
+  "name": "001-first-try",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.2.0",
+    "template": "^0.17.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.4.3",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1"
+  }
+}
+
+
+#.eslintrc CONTENTS
+{
+  "extends": ["react-app", "plugin:prettier/recommended"]
+}
+
+#index.js BOOTSTRAP IMPORTS
+import "bootstrap/dist/css/bootstrap.min.css";
+import $ from "jquery";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+
