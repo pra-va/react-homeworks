@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(192, 192, 192);
+}
+
+.cart-bg {
+  background-color: dimgray;
+  color: white;
+  border-radius: 20px;
+}
+
+#root {
+  min-height: 100vh;
+}
